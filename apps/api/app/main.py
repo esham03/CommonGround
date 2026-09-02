@@ -2,7 +2,6 @@ from fastapi import FastAPI
 
 app = FastAPI(
     title="CommonGround API",
-    description="Backend API for the CommonGround project",
     version="0.1.0",
 )
 
@@ -17,5 +16,5 @@ def root():
 @app.get("/health")
 def health():
     return {
-        "status": "ok"
+        "status": "healthy"
     }
